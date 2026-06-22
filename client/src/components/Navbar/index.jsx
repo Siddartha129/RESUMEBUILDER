@@ -33,7 +33,7 @@ function Navbar({ title, showBack = false }) {
               <div className="navbar-logo">
                 <HiDocumentText />
               </div>
-              <span className="navbar-title">AI Resume Builder</span>
+              <span className="navbar-title">Resume Builder</span>
             </Link>
             {user && (
               <div className="nav-links">

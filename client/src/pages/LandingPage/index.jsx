@@ -55,7 +55,7 @@ function LandingPage() {
           <div className="navbar-logo">
             <HiDocumentText />
           </div>
-          <span className="navbar-title">AI Resume Builder</span>
+          <span className="navbar-title">Resume Builder</span>
         </div>
         <ul className="landing-nav-links hide-mobile">
           <li><a href="#features" className="landing-nav-link">Features</a></li>
@@ -226,7 +226,7 @@ function LandingPage() {
           <div className="navbar-logo" style={{ width: '28px', height: '28px', fontSize: '14px', borderRadius: '8px' }}>
             <HiDocumentText />
           </div>
-          <span className="navbar-title" style={{ fontSize: '16px' }}>AI Resume Builder</span>
+          <span className="navbar-title" style={{ fontSize: '16px' }}>Resume Builder</span>
         </div>
         <div className="landing-footer-links">
           <a href="#features" className="landing-footer-link">Features</a>
