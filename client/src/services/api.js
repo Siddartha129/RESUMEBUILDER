@@ -3,7 +3,12 @@
 // ============================================
 // Reference: fetch(), async/await - reference-javascript.md
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const resolveBaseUrl = () => {
+  const url = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/+$/, '');
+  return url.endsWith('/api') ? url : `${url}/api`;
+};
+
+const BASE_URL = resolveBaseUrl();
 
 const fetchApi = async (endpoint, options = {}) => {
   const token = localStorage.getItem('token');
